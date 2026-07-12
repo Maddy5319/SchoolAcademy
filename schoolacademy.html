@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>School Academy | Best Education in Kolkata & West Bengal</title>
+  
+  <meta name="description" content="School Academy helps parents discover, compare, and connect with top-rated schools. Get the best Kolkata West Bengal education for your child's bright future." />
+  <meta name="keywords" content="Kolkata West bengal education, West Bengal Education, best schools in Kolkata, school admissions, education consulting" />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <a href="#" class="nav-logo" onclick="showPage('home')">
+      <div class="nav-logo-icon">SA</div>
+      <span class="nav-logo-text">School Academy</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#" onclick="showPage('home')">Home</a></li>
+      <li><a href="#" onclick="showPage('about')">About Us</a></li>
+      <li><a href="#" onclick="showPage('services')">Services</a></li>
+      <li><a href="#" onclick="showPage('listings')">School Listings</a></li>
+      <li><a href="#" onclick="showPage('contact')">Contact</a></li>
+      <li><a href="#" class="btn btn-primary" onclick="showPage('contact')">Book Free Call</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobMenu">
+    <a href="#" onclick="showPage('home'); toggleMenu()">Home</a>
+    <a href="#" onclick="showPage('about'); toggleMenu()">About Us</a>
+    <a href="#" onclick="showPage('services'); toggleMenu()">Services</a>
+    <a href="#" onclick="showPage('listings'); toggleMenu()">School Listings</a>
+    <a href="#" onclick="showPage('contact'); toggleMenu()">Contact</a>
+    <a href="#" class="btn btn-primary" style="margin-top:15px; text-align:center;" onclick="showPage('contact'); toggleMenu()">Book Free Call</a>
+  </div>
+
+  <div class="page active" id="page-home">
+    <section class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <span class="hero-eyebrow">Top Rated in Kolkata & West Bengal</span>
+        <h1 class="hero-title">Give Your Child the <span>Best Education</span> Possible</h1>
+        <p class="hero-subtitle">School Academy helps parents discover, compare, and secure admissions in the finest schools across West Bengal. Let our experts guide your child's academic journey.</p>
+        <div class="hero-ctas">
+          <a href="#" class="btn btn-primary" onclick="showPage('listings')">Explore Schools</a>
+          <a href="#" class="btn btn-outline" onclick="showPage('contact')">Get Free Counselling</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="trust-strip">
+      <div class="trust-item"><div class="trust-num">150+</div><div class="trust-label">Verified Schools</div></div>
+      <div class="trust-item"><div class="trust-num">10k+</div><div class="trust-label">Parents Guided</div></div>
+      <div class="trust-item"><div class="trust-num">98%</div><div class="trust-label">Admission Success</div></div>
+      <div class="trust-item"><div class="trust-num">24/7</div><div class="trust-label">Expert Support</div></div>
+    </div>
+
+    <section class="features">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Why Choose Us</span>
+          <h2>A Smarter Way to Find Schools</h2>
+          <p>We eliminate the stress of school hunting by providing transparent data and personalized support for West Bengal Education.</p>
+        </div>
+        <div class="grid-3">
+          <div class="feature-card">
+            <div class="feature-icon">🔍</div>
+            <h3>Vetted School Listings</h3>
+            <p>Every school on our platform is strictly verified for academic excellence, infrastructure, and safety standards.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">💡</div>
+            <h3>Expert Counselling</h3>
+            <p>Our dedicated education consultants work with you 1-on-1 to understand your child's unique needs and strengths.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">📝</div>
+            <h3>End-to-End Support</h3>
+            <p>From shortlisting campuses to filling out admission forms and preparing for interviews, we handle it all.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container split-section">
+        <div class="split-image">
+          <img src="jaredd-craig-HH4WBGNyltc-unsplash.jpg" alt="Library with books representing West Bengal Education" />
+        </div>
+        <div class="split-content">
+          <span class="section-label">Our Story</span>
+          <h2>Empowering Parents with Educational Insights</h2>
+          <p>Finding the right school in Kolkata shouldn't be a guessing game. School Academy was founded by educators and parents who wanted to bring transparency to the admissions process.</p>
+          <ul class="check-list">
+            <li>Unbiased reviews and authentic campus data</li>
+            <li>Focus on holistic child development</li>
+            <li>Free initial consultation for all families</li>
+          </ul>
+          <a href="#" class="btn btn-navy" onclick="showPage('about')">Read Our Full Story</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="cta-banner">
+      <div class="container">
+        <h2>Ready to secure your child's future?</h2>
+        <p>Join thousands of parents in Kolkata who have successfully found the perfect academic environment through School Academy.</p>
+        <a href="#" class="btn btn-primary" onclick="showPage('contact')">Contact Us Today</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="page" id="page-about">
+    <section style="background: var(--slate); padding-top: 140px;">
+      <div class="container text-center" style="max-width: 800px;">
+        <span class="section-label">About School Academy</span>
+        <h1>We Champion the Future of Education in Kolkata</h1>
+        <p style="font-size: 1.15rem; color: var(--text-muted); margin-top: 20px;">We bridge the gap between ambitious parents and elite educational institutions, ensuring every child finds a place where they can truly thrive.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container split-section">
+        <div class="split-content">
+          <h2>Our Mission</h2>
+          <p>Our mission is simple: to make world-class <strong>West Bengal Education</strong> accessible, understandable, and achievable for every family. We believe that a child's school shapes their worldview, character, and ultimate success.</p>
+          <p>For too long, the admissions process has been confusing and opaque. We exist to provide clarity, relying on verified data, authentic alumni feedback, and deep academic networking.</p>
+          <br>
+          <h2>What Makes Us Different?</h2>
+          <p>Unlike traditional directories, we do not just list schools. We are an active advisory board. We personally visit campuses, evaluate curriculums, assess faculty credentials, and interview current parents.</p>
+        </div>
+        <div class="split-image">
+          <img src="priscilla-du-preez-ggeZ9oyI-PE-unsplash.jpg" alt="Happy students collaborating in a modern classroom" />
+        </div>
+      </div>
+    </section>
+
+    <div class="cta-banner">
+      <div class="container">
+        <h2>Let's discuss your child's unique potential.</h2>
+        <a href="#" class="btn btn-primary" onclick="showPage('contact')">Book Your Free Call</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="page" id="page-services">
+    <section style="background: var(--slate); padding-top: 140px;">
+      <div class="container section-header">
+        <span class="section-label">Our Services</span>
+        <h1>Comprehensive Admission Guidance</h1>
+        <p>From initial discovery to the final acceptance letter, we offer bespoke services tailored to your family's educational goals.</p>
+      </div>
+
+      <div class="container grid-3">
+        <div class="feature-card">
+          <img src="agence-olloweb-Z2ImfOCafFk-unsplash.jpg" alt="Consulting session" style="border-radius: 8px; margin-bottom: 20px; height: 180px; width: 100%; object-fit: cover;">
+          <h3>School Discovery & Shortlisting</h3>
+          <p>We analyze your child's personality, your location in Kolkata, and your budget to create a customized list of target schools.</p>
+        </div>
+        <div class="feature-card">
+          <img src="patrick-tomasso-Oaqk7qqNh_c-unsplash.jpg" alt="Filling out applications" style="border-radius: 8px; margin-bottom: 20px; height: 180px; width: 100%; object-fit: cover;">
+          <h3>Application Assistance</h3>
+          <p>We help draft compelling parent statements, organize necessary documentation, and ensure all application deadlines are met seamlessly.</p>
+        </div>
+        <div class="feature-card">
+          <img src="shelby-murphy-figueroa-nFeAz2t0TeE-unsplash.jpg" alt="School preparation" style="border-radius: 8px; margin-bottom: 20px; height: 180px; width: 100%; object-fit: cover;">
+          <h3>Interview Preparation</h3>
+          <p>Mock interviews and readiness assessments for both parents and children to ensure confidence during the actual school interactions.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">The Process</span>
+          <h2>How It Works</h2>
+        </div>
+        <div class="steps-grid">
+          <div class="step-card">
+            <div class="step-num">1</div>
+            <h3>Connect</h3>
+            <p style="font-size:0.9rem; color:var(--text-muted);">Reach out via our contact form to schedule an initial consultation.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-num">2</div>
+            <h3>Consult</h3>
+            <p style="font-size:0.9rem; color:var(--text-muted);">Meet with our advisors to discuss your child's needs and aspirations.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-num">3</div>
+            <h3>Shortlist</h3>
+            <p style="font-size:0.9rem; color:var(--text-muted);">Review a curated list of top-tier schools matching your criteria.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-num">4</div>
+            <h3>Apply</h3>
+            <p style="font-size:0.9rem; color:var(--text-muted);">Complete the admissions process with our full expert backing.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="background: var(--slate);">
+      <div class="container">
+        <div class="section-header">
+          <h2>Frequently Asked Questions</h2>
+        </div>
+        <div class="faq-wrapper">
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">
+              When should we start the admission process? <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>For top schools in Kolkata, it is recommended to start the process at least 8-12 months before the intended academic year begins, as waitlists can be extensive.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">
+              Do you guarantee admission? <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>While we cannot legally guarantee admission as final decisions rest with the school board, our historical success rate is 98% due to accurate matching and thorough preparation.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">
+              Is the first consultation really free? <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>Yes! We offer a no-obligation 30-minute discovery call to understand your needs and see if our services are a good fit for your family.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="page" id="page-listings">
+    <section style="padding-top: 140px;">
+      <div class="container section-header">
+        <span class="section-label">Showcase Academics</span>
+        <h1>Featured Schools in West Bengal</h1>
+        <p>Browse a selection of top-rated educational institutions. Use the filters below to find the right fit for your child's age group.</p>
+      </div>
+
+      <div class="container">
+        <div class="filter-bar">
+          <button class="filter-btn active" onclick="filterCards(this, 'all')">All Schools</button>
+          <button class="filter-btn" onclick="filterCards(this, 'pre')">Pre-Primary</button>
+          <button class="filter-btn" onclick="filterCards(this, 'primary')">Primary</button>
+          <button class="filter-btn" onclick="filterCards(this, 'high')">High School</button>
+        </div>
+
+        <div class="listing-grid">
+          <div class="listing-card" data-type="high">
+            <div class="listing-img">
+              <span class="listing-badge">High School</span>
+              <img src="note-thanun-CYlPykF-qAM-unsplash.jpg" alt="Modern School Building" />
+            </div>
+            <div class="listing-content">
+              <h3>Heritage Academy Kolkata</h3>
+              <p>A leading ICSE/ISC institution known for its sprawling campus, modern laboratories, and holistic approach to senior education.</p>
+              <div class="listing-meta">
+                <span class="listing-location">📍 South Kolkata</span>
+                <a href="#" class="btn btn-navy" style="padding: 8px 16px; font-size: 0.85rem;" onclick="showPage('contact')">Get Details</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="listing-card" data-type="primary">
+            <div class="listing-img">
+              <span class="listing-badge">Primary</span>
+              <img src="tim-mossholder-WE_Kv_ZB1l0-unsplash.jpg" alt="School Exterior Outdoors" />
+            </div>
+            <div class="listing-content">
+              <h3>St. Xavier's Primary Branch</h3>
+              <p>Offering a rigorous foundation in academics and extracurriculars. Consistently ranked among the top primary schools in West Bengal.</p>
+              <div class="listing-meta">
+                <span class="listing-location">📍 Central Kolkata</span>
+                <a href="#" class="btn btn-navy" style="padding: 8px 16px; font-size: 0.85rem;" onclick="showPage('contact')">Get Details</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="listing-card" data-type="pre">
+            <div class="listing-img">
+              <span class="listing-badge">Pre-Primary</span>
+              <img src="aaron-burden-6jYoil2GhVk-unsplash.jpg" alt="Children's Library Books" />
+            </div>
+            <div class="listing-content">
+              <h3>Little Scholars Montessori</h3>
+              <p>A nurturing, play-based environment focusing on early childhood development, cognitive skills, and emotional intelligence.</p>
+              <div class="listing-meta">
+                <span class="listing-location">📍 Salt Lake, WB</span>
+                <a href="#" class="btn btn-navy" style="padding: 8px 16px; font-size: 0.85rem;" onclick="showPage('contact')">Get Details</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="listing-card" data-type="high">
+            <div class="listing-img">
+              <span class="listing-badge">High School</span>
+              <img src="roman-mager-5mZ_M06Fc9g-unsplash.jpg" alt="Advanced Math on Blackboard" />
+            </div>
+            <div class="listing-content">
+              <h3>The Cambridge International</h3>
+              <p>Offering the IGCSE curriculum with state-of-the-art STEM facilities and global university placement programs.</p>
+              <div class="listing-meta">
+                <span class="listing-location">📍 New Town, Kolkata</span>
+                <a href="#" class="btn btn-navy" style="padding: 8px 16px; font-size: 0.85rem;" onclick="showPage('contact')">Get Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="page" id="page-contact">
+    <section style="background: var(--slate); padding-top: 140px; padding-bottom: 60px;">
+      <div class="container section-header" style="margin-bottom: 40px;">
+        <span class="section-label">Get in Touch</span>
+        <h1>Let's Plan Your Child's Future</h1>
+        <p>Fill out the form below to book your free educational consultation or request details about specific schools.</p>
+      </div>
+    </section>
+
+    <section style="padding-top: 0; margin-top: -40px; position: relative; z-index: 10;">
+      <div class="container">
+        <div class="contact-wrapper">
+          <div class="contact-info-panel">
+            <h2>Contact Information</h2>
+            <p>Our admission experts are available Monday through Saturday to answer your questions regarding West Bengal education.</p>
+            
+            <div class="info-block">
+              <div class="info-icon">📞</div>
+              <div>
+                <h4>Phone</h4>
+                <p>+91 98765 43210</p>
+              </div>
+            </div>
+            <div class="info-block">
+              <div class="info-icon">✉️</div>
+              <div>
+                <h4>Email</h4>
+                <p>admissions@schoolacademy.in</p>
+              </div>
+            </div>
+            <div class="info-block">
+              <div class="info-icon">📍</div>
+              <div>
+                <h4>Head Office</h4>
+                <p>Park Street, Kolkata, West Bengal 700016</p>
+              </div>
+            </div>
+
+            <div style="margin-top: 40px; border-radius: 8px; overflow: hidden; height: 200px; background: #ddd;">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117925.33439927702!2d88.2649509204273!3d22.535406374526543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02774b02869ce5%3A0xeca2c5c93d2568!2sKolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+          </div>
+
+          <div class="contact-form-panel">
+            <h3 style="margin-bottom: 24px;">Send a Message</h3>
+            <form onsubmit="event.preventDefault(); handleSubmit();">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="fname">Your Name</label>
+                  <input type="text" id="fname" class="form-control" placeholder="John Doe" required />
+                </div>
+                <div class="form-group">
+                  <label for="fphone">Phone Number</label>
+                  <input type="tel" id="fphone" class="form-control" placeholder="+91 00000 00000" required />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="femail">Email Address</label>
+                <input type="email" id="femail" class="form-control" placeholder="john@example.com" required />
+              </div>
+              <div class="form-group">
+                <label for="fmsg">How can we help? (Optional: Mention specific schools)</label>
+                <textarea id="fmsg" class="form-control" placeholder="I am looking for a primary school for my 6-year-old child..."></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary" style="width: 100%; padding: 16px;">Request Consultation</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="nav-logo" style="margin-bottom: 15px;" onclick="showPage('home')">
+          <div class="nav-logo-icon">SA</div>
+          <span class="nav-logo-text">School Academy</span>
+        </a>
+        <p>Your trusted educational partner, helping parents navigate school admissions across Kolkata and West Bengal with confidence.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#" onclick="showPage('home')">Home</a></li>
+          <li><a href="#" onclick="showPage('about')">About Us</a></li>
+          <li><a href="#" onclick="showPage('services')">Our Services</a></li>
+          <li><a href="#" onclick="showPage('listings')">School Listings</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#" onclick="showPage('contact')">Contact Us</a></li>
+          <li><a href="#" onclick="showPage('services')">FAQ</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Follow Us</h4>
+        <p style="margin-bottom: 15px; font-size: 0.9rem;">Join our community for the latest updates on West Bengal Education.</p>
+        <div style="display: flex; gap: 12px;">
+          <a href="#" style="display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; background: rgba(255,255,255,0.1); border-radius: 50%; color: var(--gold); text-decoration: none;">fb</a>
+          <a href="#" style="display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; background: rgba(255,255,255,0.1); border-radius: 50%; color: var(--gold); text-decoration: none;">in</a>
+          <a href="#" style="display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; background: rgba(255,255,255,0.1); border-radius: 50%; color: var(--gold); text-decoration: none;">tw</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 School Academy. All rights reserved. Designed for Kolkata Education.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
